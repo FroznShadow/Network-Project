@@ -1,0 +1,9 @@
+﻿  main.cpp
+c:\users\tonilyy\desktop\courseproject\courseproject\server\Player.h(34): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\desktop\courseproject\courseproject\server\Player.h(38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\desktop\courseproject\courseproject\server\Player.h(42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\desktop\courseproject\courseproject\server\Player.h(46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\desktop\courseproject\courseproject\server\Player.h(60): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  main.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Server.vcxproj -> C:\Users\tonilyy\Desktop\CourseProject\CourseProject\x64\Debug\Server.exe
+  Server.vcxproj -> C:\Users\tonilyy\Desktop\CourseProject\CourseProject\x64\Debug\Server.pdb (Partial PDB)

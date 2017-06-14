@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{434ae158-4614-4ed1-ab80-418ac7b202ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Components">
+      <UniqueIdentifier>{c9a0daa9-0be6-45d5-89ce-d56f2a8eb02f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Input">
+      <UniqueIdentifier>{ac9ad446-d71e-407a-9f6c-298060195eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Managers">
+      <UniqueIdentifier>{0e0396c0-7256-4fbc-b5ae-3c0806034943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Shaders">
+      <UniqueIdentifier>{9e27986a-ec62-472c-a468-22525c639954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Systems">
+      <UniqueIdentifier>{a4c206f2-597f-4912-adf4-4a1c96488993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\lib">
+      <UniqueIdentifier>{428d2860-e840-4400-94f5-5ebe68f72df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lodepng">
+      <UniqueIdentifier>{dc31f726-6c39-4092-9eeb-b26a691f1640}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PhysicsSystem.hpp">
+      <Filter>Core\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Core\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.h">
+      <Filter>Core\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Core\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingSystem.h">
+      <Filter>Core\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSystem.h">
+      <Filter>Core\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Camera.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Core\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Lodepng</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AABB.hpp">
+      <Filter>Core\Components</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Core\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSystem.cpp">
+      <Filter>Core\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>Lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>Core\Systems</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
