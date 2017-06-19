@@ -283,6 +283,10 @@ public:
 		std::cout << "score up" << std::endl;
 		score++;
 	}
+	int GetScore()
+	{
+		return score;
+	}
 	
 private:
 	int health;
