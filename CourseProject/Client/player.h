@@ -60,7 +60,6 @@ public:
 		{
 			bulletList.at(i)->move();
 			bulletList.at(i)->draw(window);
-
 		}
 	}
 	void init(float radius, sf::Color fillColor, sf::Vector2f position)

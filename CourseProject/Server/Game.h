@@ -17,7 +17,7 @@ public:
 		level.init();
 		player1 = new Player;
 		player2 = new Player;
-		/////////////////////////////////////////// Init Players	//
+		// Init Players	//////////////////////////////////////////////
 		player1->init												//
 		(															//
 			20.0f,								// Size				//
@@ -33,7 +33,7 @@ public:
 		wallList = level.getWallList();
 		player1_bulletList = player1->getBulletList();
 		player2_bulletList = player1->getBulletList();
-		////////////////////////////////////////// Set Initial Data	//
+		// Set Initial Data	//////////////////////////////////////////
 		player1->setData											//
 		(															//
 			"Player1",							// Name				//

@@ -8,15 +8,18 @@ public:
 	
 	Bullet() {}
 	~Bullet(){}
-
-	void init(float radius, sf::Color fillColor, sf::Vector2f position)
-	{
-		type = 'B';
-		bullet.setRadius(radius);
-		bullet.setFillColor(fillColor);
-		bullet.setPosition(position);
-		BoundingBox = bullet.getGlobalBounds();
-	}
+	// Init Bullet	//////////////////////////////////////////////
+	void init(float radius,										//
+		sf::Color fillColor,									//
+		sf::Vector2f position)									//
+	{															//
+		type = 'B';												//
+		bullet.setRadius(radius);								//
+		bullet.setFillColor(fillColor);							//
+		bullet.setPosition(position);							//
+		BoundingBox = bullet.getGlobalBounds();					//
+	}															//
+	//////////////////////////////////////////////////////////////
 	void deleteBullet()
 	{
 		delete this;
@@ -26,49 +29,72 @@ public:
 		move(direction);
 		lifeTimer-=0.1;
 	}
-	void draw(sf::RenderWindow &window) { window.draw(bullet); }
-	void move(std::string dir)
-	{
-		if (dir == "W")
-		{
-			bullet.setPosition(bullet.getPosition().x, bullet.getPosition().y - 0.1);
-		}
-		else if (dir == "S")
-		{
-			bullet.setPosition(bullet.getPosition().x, bullet.getPosition().y + 0.1);
-		}
-		else if (dir == "A")
-		{
-			bullet.setPosition(bullet.getPosition().x - 0.1, bullet.getPosition().y);
-		}
-		else if (dir == "D")
-		{
-			bullet.setPosition(bullet.getPosition().x + 0.1, bullet.getPosition().y);
-		}
-	}
-	sf::FloatRect getBoundingBox()
-	{
-		BoundingBox = bullet.getGlobalBounds();
-		return BoundingBox;
-	}
-	void setDir(std::string dir)
-	{
-		direction = dir;
-	}
-	int getlifeTimer()
-	{
-		return lifeTimer;
-	}
-	void destroy() 
-	{
-		lifeTimer = 0;
-	}
-private:
-	sf::CircleShape bullet;
-	std::string direction;
-	double lifeTimer = 12000;
-};
-
+	void draw(sf::RenderWindow &window) 
+	{ window.draw(bullet); }
+	// Move Bullet	//////////////////////////////////////////////
+	void move(std::string dir)									//
+	{															//
+		if (dir == "W")											//
+		{														//
+			bullet.setPosition									//
+			(													//
+				bullet.getPosition().x,							//
+				bullet.getPosition().y - 0.1					//
+			);													//
+		}														//
+		else if (dir == "S")									//
+		{														//
+			bullet.setPosition									//
+			(													//
+				bullet.getPosition().x,							//
+				bullet.getPosition().y + 0.1					//
+			);													//
+		}														//
+		else if (dir == "A")									//
+		{														//
+			bullet.setPosition									//
+			(													//
+				bullet.getPosition().x - 0.1,					//
+				bullet.getPosition().y							//
+			);													//
+		}														//
+		else if (dir == "D")									//
+		{														//
+			bullet.setPosition									//
+			(													//
+				bullet.getPosition().x + 0.1,		// X		//
+				bullet.getPosition().y				// Y		//
+			);													//
+		}														//
+	}															//
+	//////////////////////////////////////////////////////////////
+	sf::FloatRect getBoundingBox()								//
+	{															//
+		BoundingBox = bullet.getGlobalBounds();					//
+		return BoundingBox;										//
+	}															//
+	//////////////////////////////////////////////////////////////
+	void setDir(std::string dir)								//
+	{															//
+		direction = dir;										//
+	}															//
+	//////////////////////////////////////////////////////////////
+	int getlifeTimer()											//
+	{															//
+		return lifeTimer;										//
+	}															//
+	//////////////////////////////////////////////////////////////
+	void destroy()												// 
+	{															//
+		lifeTimer = 0;											//
+	}															//
+	//////////////////////////////////////////////////////////////
+private:														//
+	sf::CircleShape bullet;										//
+	std::string direction;										//
+	double lifeTimer = 12000;									//
+};																//
+//////////////////////////////////////////////////////////////////
 class Player : public GameObject
 {
 public:
@@ -110,7 +136,12 @@ public:
 		}
 	}
 
-	void init(float radius,sf::Color fillColor,sf::Vector2f position) 
+	void init
+	(
+		float radius,
+		sf::Color fillColor,
+		sf::Vector2f position
+	) 
 	{
 		playerColor = fillColor;
 		setPosition(position);
@@ -123,7 +154,15 @@ public:
 		
 		
 	}
-	void setData(std::string name, sf::Vector2f pos, float rot = 0, sf::Vector2f scale = sf::Vector2f(1,1), std::string shooting = "", int deleteBullet = -1)
+	void setData
+	(
+		std::string name, 
+		sf::Vector2f pos, 
+		float rot = 0, 
+		sf::Vector2f scale = sf::Vector2f(1,1), 
+		std::string shooting = "", 
+		int deleteBullet = -1
+	)
 	{
 		if( name != "")data.name = name;
 		data.position = pos;
@@ -213,7 +252,11 @@ public:
 	void move(float x, float y)
 	{
 		movingDirection = sf::Vector2f(x, -y);
-		setPosition(circle.getPosition().x +x, circle.getPosition().y + y);
+		setPosition
+		(
+			circle.getPosition().x +x, 
+			circle.getPosition().y + y
+		);
 		circle.setPosition(getPosition());
 	}
 	void setPlayerPosition(sf::Vector2f pos) 
@@ -227,7 +270,12 @@ public:
 	{
 		Bullet *bullet = new Bullet;
 		bullet->setDir(dir);
-		bullet->init(10.f, playerColor, circle.getPosition());
+		bullet->init
+		(
+			10.f, 
+			playerColor, 
+			circle.getPosition()
+		);
 		bulletList.push_back(bullet);
 	}
 	void deleteBullet(Bullet* bullet)
@@ -249,19 +297,45 @@ public:
 		{
 			if (otherObject->type == 'W')
 			{
-				if (BoundingBox.top  < otherObject->BoundingBox.top && BoundingBox.top  + BoundingBox.height > otherObject->BoundingBox.top )
+				if (
+					BoundingBox.top  
+					< otherObject->BoundingBox.top 
+					&& BoundingBox.top  
+					+ BoundingBox.height 
+					> otherObject->BoundingBox.top 
+					)
 				{
 					move(0, -0.1f);
 				}
-				if (BoundingBox.top < otherObject->BoundingBox.top + otherObject->BoundingBox.height && BoundingBox.top + BoundingBox.height > otherObject->BoundingBox.top + otherObject->BoundingBox.height)
+				if (
+					BoundingBox.top 
+					< otherObject->BoundingBox.top 
+					+ otherObject->BoundingBox.height 
+					&& BoundingBox.top + BoundingBox.height 
+					> otherObject->BoundingBox.top 
+					+ otherObject->BoundingBox.height
+					)
 				{
 					move(0, 0.1f);
 				}
-				if (BoundingBox.left < otherObject->BoundingBox.left + otherObject->BoundingBox.width && BoundingBox.left + BoundingBox.width > otherObject->BoundingBox.left + otherObject->BoundingBox.width)
+				if (
+					BoundingBox.left 
+					< otherObject->BoundingBox.left 
+					+ otherObject->BoundingBox.width 
+					&& BoundingBox.left + BoundingBox.width 
+					> otherObject->BoundingBox.left 
+					+ otherObject->BoundingBox.width
+					)
 				{
 					move(0.1f, 0);
 				}
-				if (BoundingBox.left < otherObject->BoundingBox.left && BoundingBox.left + BoundingBox.width > otherObject->BoundingBox.left )
+				if (
+					BoundingBox.left 
+					< otherObject->BoundingBox.left 
+					&& BoundingBox.left 
+					+ BoundingBox.width 
+					> otherObject->BoundingBox.left 
+					)
 				{
 					move(-0.1f, 0);
 				}

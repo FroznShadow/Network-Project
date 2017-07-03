@@ -38,9 +38,25 @@ private:
 
 sf::Packet& operator <<(sf::Packet& packet, const packetData& data)
 {
-	return packet << data.name << data.position.x << data.position.y << data.rotation << data.scale.x << data.scale.y << data.shooting <<data.deletingBullet;
+	return packet 
+		<< data.name 
+		<< data.position.x 
+		<< data.position.y 
+		<< data.rotation 
+		<< data.scale.x 
+		<< data.scale.y 
+		<< data.shooting 
+		<< data.deletingBullet;
 }
 sf::Packet& operator >> (sf::Packet& packet, packetData& data)
 {
-	return packet >> data.name >> data.position.x >> data.position.y >> data.rotation >> data.scale.x >> data.scale.y >> data.shooting >> data.deletingBullet;
+	return packet 
+		>> data.name 
+		>> data.position.x 
+		>> data.position.y 
+		>> data.rotation 
+		>> data.scale.x 
+		>> data.scale.y 
+		>> data.shooting 
+		>> data.deletingBullet;
 }

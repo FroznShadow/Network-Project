@@ -17,7 +17,10 @@ public:
 class StateMachine
 {
 public:
-	static StateMachine* getInstance() { static StateMachine instance; return &instance; };
+	static StateMachine* getInstance() 
+	{ 
+		static StateMachine instance; return &instance; 
+	};
 	void ChangeState(State* state);
 	void PushState(State* state);
 	void PopState();
