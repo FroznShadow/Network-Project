@@ -1,2 +1,9 @@
-﻿  Server.vcxproj -> C:\Users\tonilyy\Documents\GitHub\Network-Project\CourseProject\x64\Debug\Server.exe
+﻿  main.cpp
+c:\users\tonilyy\documents\github\network-project\courseproject\server\Player.h(43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\server\Player.h(51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\server\Player.h(59): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\server\Player.h(67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\server\Player.h(84): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  main.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Server.vcxproj -> C:\Users\tonilyy\Documents\GitHub\Network-Project\CourseProject\x64\Debug\Server.exe
   Server.vcxproj -> C:\Users\tonilyy\Documents\GitHub\Network-Project\CourseProject\x64\Debug\Server.pdb (Partial PDB)

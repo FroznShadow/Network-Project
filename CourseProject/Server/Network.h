@@ -54,21 +54,21 @@ public:
 							receive1.clear();
 							if (socket.receive(receive1) == sf::Socket::Done)
 							{
-								std::cout << "Received packet " << "Size "<< receive1.getDataSize() << std::endl;
+								//std::cout << "Received packet " << "Size "<< receive1.getDataSize() << std::endl;
 							}
-							else std::cout << "nothing to get";
+							//else //std::cout << "nothing to get";
 						}
 						else if (it->first == 2)
 						{
 							receive2.clear();
 							if (socket.receive(receive2) == sf::Socket::Done)
 							{
-								std::cout << "Received packet " << "Size "<< receive2.getDataSize() << std::endl;
+								//std::cout << "Received packet " << "Size "<< receive2.getDataSize() << std::endl;
 							}
-							else std::cout << "nothing to get";
+							//else //std::cout << "nothing to get";
 						}
 					}
-					else std::cout << "not ready";
+					//else //std::cout << "not ready";
 				}
 			}
 		}
