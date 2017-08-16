@@ -10,6 +10,7 @@ int main()
 	StateMachine* sm = sm->getInstance();
 	DeltaTime time;
 	MainMenu *mainMenu = new MainMenu;
+
 	sm->PushState(mainMenu);
 	sf::RenderWindow window(sf::VideoMode(600, 600), "Da Geimu");
 	while (window.isOpen())
@@ -26,7 +27,7 @@ int main()
 		sm->Draw(window);	
 		if (mainMenu->ChangeState() == true)
 		{
-			Game *game = new Game;
+				Game *game = new Game;
 			sm->ChangeState(game);
 		}
 		window.display();

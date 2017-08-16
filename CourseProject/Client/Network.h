@@ -10,7 +10,7 @@ public:
 
 	void init()
 	{
-		status = socket.connect(sf::IpAddress(172,31,16,9), 35350);
+		status = socket.connect(sf::IpAddress(172,31,16,158), 35350);
 		if (status != sf::Socket::Done)
 		{
 			std::cout << "mistakeeeeeee";

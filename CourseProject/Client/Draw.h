@@ -73,8 +73,6 @@ public:
 			std::string input = { "D" };
 			network.sendData(input);
 		}
-
-
 		packetData data,data2;
 		network.receiveData();
 		network.receive >> data >> data2;

@@ -1,9 +1,8 @@
 ﻿  main.cpp
-c:\users\tonilyy\desktop\courseproject\courseproject\client\player.h(27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\tonilyy\desktop\courseproject\courseproject\client\player.h(31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\tonilyy\desktop\courseproject\courseproject\client\player.h(35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\tonilyy\desktop\courseproject\courseproject\client\player.h(39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\tonilyy\desktop\courseproject\courseproject\client\network.h(26): warning C4101: 'stat': unreferenced local variable
-main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
-  Client.vcxproj -> C:\Users\tonilyy\Desktop\CourseProject\CourseProject\x64\Debug\Client.exe
-  Client.vcxproj -> C:\Users\tonilyy\Desktop\CourseProject\CourseProject\x64\Debug\Client.pdb (Partial PDB)
+c:\users\tonilyy\documents\github\network-project\courseproject\client\player.h(27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\client\player.h(31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\client\player.h(35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\client\player.h(39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\github\network-project\courseproject\client\network.h(26): warning C4101: 'stat': unreferenced local variable
+  Client.vcxproj -> C:\Users\tonilyy\Documents\GitHub\Network-Project\CourseProject\x64\Debug\Client.exe
+  Client.vcxproj -> C:\Users\tonilyy\Documents\GitHub\Network-Project\CourseProject\x64\Debug\Client.pdb (Partial PDB)
