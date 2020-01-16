@@ -10,12 +10,12 @@ public:
 
 	void init()
 	{
-		status = socket.connect(sf::IpAddress(172,31,16,158), 35350);
+		status = socket.connect(sf::IpAddress::getLocalAddress(), 35350);
 		if (status != sf::Socket::Done)
 		{
-			std::cout << "mistakeeeeeee";
+			std::cout << "status" << status;
 		}
-		else std::cout << "Connected to port" << std::endl;
+		else std::cout << "Connected to port" << sf::IpAddress::getLocalAddress() << status << std::endl;
 	}
 
 	void sendData(std::string s)
@@ -39,7 +39,7 @@ public:
 			}
 			if (status == sf::Socket::Disconnected)
 			{
-				std::cout << "Disconnecter Sending Data " << std::endl;
+				std::cout << "Disconnected" << std::endl;
 			}
 			
 		}
@@ -53,12 +53,12 @@ public:
 		if (socket.receive(receive) == sf::Socket::Done)
 		{
 
-			//std::cout << "Received packet " << "Size " << receive.getDataSize() << std::endl;
-			/*packetData data;
+		//	std::cout << "Received packet " << "Size " << receive.getDataSize() << std::endl;
+			packetData data;
 			receive >> data;
-			std::cout << "Position X: " << data.position.x << " Position Y: " << data.position.y;*/
+		//	std::cout << "Position X: " << data.position.x << " Position Y: " << data.position.y;
 		}
-		else std::cout << "nothing to get";
+		//else std::cout << "nothing to get";
 	}	
 	sf::Packet receive;
 private:

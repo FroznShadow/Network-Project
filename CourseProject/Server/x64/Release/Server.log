@@ -1,0 +1,11 @@
+﻿  main.cpp
+C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(42,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(50,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(57,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(65,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(84,10): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 535 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Server.vcxproj -> C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\x64\Release\Server.exe

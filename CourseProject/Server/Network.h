@@ -7,16 +7,17 @@ class Network
 public:
 	Network() {}
 	~Network() {}
+	int port = 35350;
 
 	void init()
 	{
 		
 		listener.setBlocking(false);
-		if (listener.listen(35350,sf::IpAddress::getLocalAddress()) != sf::Socket::Done)
+		if (listener.listen(port) != sf::Socket::Done)
 		{
 			std::cout << "Error 1";
 		}
-		else std::cout <<  "listening to a port";
+		else std::cout <<  "listening to a port: " << port << " on ip address: " << sf::IpAddress::getPublicAddress() << std::endl;
 
 		selector.add(listener);
 	}
