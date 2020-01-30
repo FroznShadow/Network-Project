@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CourseProject",
+    "\\CourseProject\\Server"
   ],
+  "SelectedNode": "\\CourseProject\\Server\\GameObject.h",
   "PreviewInSolutionExplorer": false
 }

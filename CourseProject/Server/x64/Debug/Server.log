@@ -5,4 +5,5 @@ C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Play
 C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(65,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Server\Player.h(84,10): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   main.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Server.vcxproj -> C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\x64\Debug\Server.exe
+main.obj : warning LNK4248: unresolved typeref token (01000014) for 'pg_result'; image may not run
+  Server.vcxproj -> C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\x64\Debug\Server.exe

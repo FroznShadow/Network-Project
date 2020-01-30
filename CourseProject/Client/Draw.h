@@ -10,7 +10,7 @@ public:
 	~Game() {}
 	void Init()
 	{
-		network.init();
+		networkInstance->init();
 		level.init();
 		player1 = new Player;
 		player2 = new Player;
@@ -35,47 +35,47 @@ public:
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 		{
 			std::string input = "Up";
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 		{
 			std::string input = { "Down" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 		{
 			std::string input = { "Left" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 		{
 			std::string input = { "Right" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 		{
 			std::string input = { "W" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
 		{
 			std::string input = { "S" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
 		{
 			std::string input = { "A" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
 		{
 			std::string input = { "D" };
-			network.sendData(input);
+			networkInstance->sendData(input);
 		}
 		packetData data,data2;
-		network.receiveData();
-		network.receive >> data >> data2;
+		networkInstance->receiveData();
+		networkInstance->receive >> data >> data2;
 		if (data.name == "Player1")
 		{
 			player1->setData(data.name, data.position, data.rotation, data.scale, data.shoot);
@@ -104,6 +104,10 @@ public:
 		player2->move(x, y);
 
 	}
+	void setNetwork(Network* network)
+	{
+		networkInstance = network;
+	}
 
 private:
 
@@ -113,7 +117,7 @@ private:
 	std::vector<Wall*> wallList;
 	std::vector<Bullet*> player1_bulletList;
 	std::vector<Bullet*> player2_bulletList;
-	Network network;
+	Network *networkInstance;
 
 };
 

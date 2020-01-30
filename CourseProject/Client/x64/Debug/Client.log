@@ -3,5 +3,5 @@ C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Play
 C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(31,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(35,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(39,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Network.h(26,23): warning C4101: 'stat': unreferenced local variable
+C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Network.h(28,23): warning C4101: 'stat': unreferenced local variable
   Client.vcxproj -> C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\x64\Debug\Client.exe

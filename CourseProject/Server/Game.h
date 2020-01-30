@@ -148,18 +148,8 @@ public:
 	{
 		int p1Score = player1->GetScore();
 		int p2Score = player2->GetScore();
-		FILE * pFile; 
-		fopen_s(&pFile, "Score.txt", "w");
-		fclose(pFile);
-		std::fstream score("Score.txt");
-		if (score.is_open())
-		{
-			score << "Player 1 Score: " << p1Score << std::endl;
-			score << "Player 2 Score: " << p2Score << std::endl;
-			score.close();
-		}
-		else std::cout << "Unable to open File";
-
+		network.sendScore(p1Score, 1);
+		network.sendScore(p2Score, 2);
 	}
 
 private:
