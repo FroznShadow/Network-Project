@@ -11,8 +11,8 @@ public:
 	void init()
 	{
 
-		std::cout << "Establishing a connection to a server on local ip address " << ipAddress << " on port 35350" << std::endl;
-		status = socket.connect(ipAddress, 35350);
+		std::cout << "Establishing a connection to a server on local ip address " << ipAddress << " on port 2310" << std::endl;
+		status = socket.connect(ipAddress, 2310);
 		if (status != sf::Socket::Done)
 		{
 			std::cout << "Could not connect to server" << std::endl;
@@ -21,7 +21,7 @@ public:
 	}
 	std::string login(std::string username, std::string password)
 	{
-
+		return username;
 	}
 	void sendData(std::string s)
 	{

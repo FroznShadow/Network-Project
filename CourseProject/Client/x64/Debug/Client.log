@@ -1,7 +1,7 @@
 ﻿  main.cpp
-C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(27,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(31,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(35,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(39,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\source\repos\FroznShadow\Network-Project\CourseProject\Client\Network.h(28,23): warning C4101: 'stat': unreferenced local variable
-  Client.vcxproj -> C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\x64\Debug\Client.exe
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\network.h(31): warning C4101: 'stat': unreferenced local variable
+  Client.vcxproj -> C:\Users\tonilyy\Documents\network-project\CourseProject\x64\Debug\Client.exe

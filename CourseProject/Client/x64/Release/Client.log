@@ -1,11 +1,10 @@
 ﻿  main.cpp
-C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(27,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(31,70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(35,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\Client\Player.h(39,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\Client\Network.h(26,23): warning C4101: 'stat': unreferenced local variable
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\player.h(39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\tonilyy\documents\network-project\courseproject\client\network.h(31): warning C4101: 'stat': unreferenced local variable
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 318 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 531 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  Client.vcxproj -> C:\Users\Toni\Source\Repos\FroznShadow\Network-Project\CourseProject\x64\Release\Client.exe
+  Client.vcxproj -> C:\Users\tonilyy\Documents\network-project\CourseProject\x64\Release\Client.exe
